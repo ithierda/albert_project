@@ -1,10 +1,12 @@
-* Creating a clear and informative README file is crucial for any project, as it often serves as the first point of reference for anyone who encounters your project repository.
-* Below is a template to start with: 
-
-# Project Title
+# Predicting Hotel Prices
 
 ## Overview
-Briefly describe what the project does and its purpose. Include any unique features or problems it solves.
+We'd like to predict the price of accommodation in Marseille for a 3-day weekend in May. 
+Using Booking.com data
+
+## Data
+Here is a link to a google drive with the data : https://drive.google.com/drive/folders/1OU4Gj2SCetQyxOI3BPtzQPSEQ_rVa6zB?usp=sharing
+
 
 ## Features
 - Feature 1: Describe the feature and its benefit.
@@ -20,8 +22,3 @@ cd projectname
 pip install -r requirements.txt
 
 
-
-Hello world !!
-
-
-antoher line of text
