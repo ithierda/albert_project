@@ -12,12 +12,15 @@ We created our own database for this purpose from 3 sources:
 - Papers: to collect data on accounting firms
 - LinkedIn: to retrieve their training 
 
-We recovered data from our 3 sources using scrapping methods with the Selenium library.
+We retrieved data from our 3 sources using scrapping methods with the Selenium, Beautiful Soup and Request libraries.
+
+Our aim was really to recover as much data as possible, as there was a real purpose behind it: to contact the beneficiaries. We have a lot of contact information etc.
 
 By joining the 3 datasets, we obtained our final data, in order to find the beneficiary to advise us.
 
 ### Data Quality/Cleaning/Preparation
-
+We had to deal with data problems. They were not "clean" and had several NaNs. We dealt with these cases.
+We also had a typical case to deal with in the 'company size' column. We often found ourselves with data 'between 5 and 10 people'. For this, we set up an algorithm to keep only the numbers in the string (5-10) and average them out to 7.5 employees.
 
 Here is a link to a google drive with the cleaned data : https://drive.google.com/drive/folders/1OU4Gj2SCetQyxOI3BPtzQPSEQ_rVa6zB?usp=sharing
 
@@ -34,8 +37,9 @@ These are the features on which we're going to train our models:
 
 ## Machine Learning
 
-Based on these characteristics, we'll create clusters according to this, and then predict the ebitda ratio of each cluster using machine learning.
-We then keep the best cluster and obtain the best type of beneficiary to advise us.
+Based on these characteristics, we ran a classical linear regression to predict EBITDA. Then we made clusters without the EBITDA data, just with the beneficiary data. So we have a cluster center that models an average beneficiary (we have 3 clusters).
+We'll now take the center of this cluster and predict the EBITDA, and we'll choose the highest EBITDA among the 3 clusters. This gives us our typical profit.
+We'll then select from our original table with all the contacts, the set of beneficiaries that correspond to our typical beneficiary
 
 Bonus: we have a list of these beneficiaries and can contact them.
 
