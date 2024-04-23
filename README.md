@@ -6,13 +6,20 @@ However, as students and young chartered accountants, we need advice.
 So we want to find the best person to advise us, so we're creating a profile for him or her. So we're looking for a beneficiary.
 
 ## Data
-We created our own database for this purpose from 2 sources: 
-- Papers: to collect data on beneficiaries in accounting firms.
-- LinkedIn: to retrieve their
+### Data content
+We created our own database for this purpose from 3 sources:
+- Directory of chartered accountants: to collect data on beneficiaries
+- Papers: to collect data on accounting firms
+- LinkedIn: to retrieve their training 
 
-By joining the 2 datasets, we obtained our final data, in order to find the beneficiary to advise us.
+We recovered data from our 3 sources using scrapping methods with the Selenium library.
 
-Here is a link to a google drive with the data : https://drive.google.com/drive/folders/1OU4Gj2SCetQyxOI3BPtzQPSEQ_rVa6zB?usp=sharing
+By joining the 3 datasets, we obtained our final data, in order to find the beneficiary to advise us.
+
+### Data Quality/Cleaning/Preparation
+
+
+Here is a link to a google drive with the cleaned data : https://drive.google.com/drive/folders/1OU4Gj2SCetQyxOI3BPtzQPSEQ_rVa6zB?usp=sharing
 
 
 ## Features
