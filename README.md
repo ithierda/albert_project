@@ -29,7 +29,7 @@ Here is a link to a google drive with the cleaned data : https://drive.google.co
 
 
 ## Features
-(As a reminder: the "best beneficiary" is the one who offers us the best EBITDA ratio).
+(As a reminder: the "best beneficiary" is the one who offers us the best turnover).
 
 These are the features on which we're going to train our models: 
 - address
@@ -42,7 +42,7 @@ These are the features on which we're going to train our models:
 
 Based on these characteristics, we ran a classical linear regression to predict EBITDA. Then we made clusters without the EBITDA data, just with the beneficiary data. So we have a cluster center that models an average beneficiary (we have 3 clusters).
 
-We'll now take the center of this cluster and predict the EBITDA, and we'll choose the highest EBITDA among the 3 clusters. This gives us our typical profit.
+We'll now take the center of this cluster and predict the turnover, and we'll choose the highest turnover among the 3 clusters. This gives us our typical profit.
 
 We'll then select from our original table with all the contacts, the set of beneficiaries that correspond to our typical beneficiary
 
