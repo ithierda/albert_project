@@ -1,7 +1,7 @@
 # Find the best beneficiary for an accounting firm
 
 ## Overview
-We have just set up our new accounting firm "Albecounting".
+We have just set up our new accounting firm "Albertcounting".
 
 However, as students and young chartered accountants, we need advice.
 
