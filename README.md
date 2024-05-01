@@ -34,18 +34,23 @@ Here is a link to a google drive with the cleaned data : https://drive.google.co
 These are the features on which we're going to train our models: 
 - address
 - beneficiary age
-- education
 - company size
 - number of chartered accountants
 
 ## Machine Learning
 
-Based on these characteristics, we ran a classical linear regression to predict EBITDA. Then we made clusters without the EBITDA data, just with the beneficiary data. So we have a cluster center that models an average beneficiary (we have 3 clusters).
+Here's how it works: 
 
-We'll now take the center of this cluster and predict the turnover, and we'll choose the highest turnover among the 3 clusters. This gives us our typical profit.
+Search for a type of beneficiary using clustering.
+Keep the cluster with the best median EBITDA %.
 
-We'll then select from our original table with all the contacts, the set of beneficiaries that correspond to our typical beneficiary
+We obtain a group of beneficiaries → best characteristics that favor a good EBITDA percentage
 
+Filter according to our expectations
+location: Paris region
+those who have already proved themselves in EBITDA
+
+⇒ a group of ten or so beneficiaries to contact
 
 Bonus: we have a list of these beneficiaries and can contact them.
 
